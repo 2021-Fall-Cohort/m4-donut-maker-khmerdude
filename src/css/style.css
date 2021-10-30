@@ -1,0 +1,30 @@
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+.donut-maker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hire-baker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.efficiency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: aqua;
+}
+
+#reset > img {
+max-width: 20px;
+border-radius: 50%;
+background: remove;
+}
