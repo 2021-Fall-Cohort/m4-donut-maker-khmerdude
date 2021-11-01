@@ -7,6 +7,9 @@ const AutoClickCounter = document.getElementById("number-of-bakers")
 const MultiplierCounter = document.getElementById("increase-efficiency")
 const AutoCost = document.getElementById("salary")
 const MultiCost = document.getElementById("price")
+const About = document.getElementById("about")
+const AboutButton = document.getElementById("abtBtn")
+const Exit = document.getElementsByClassName("close")
 
 const restarting = document.getElementById("reset")
 
@@ -62,6 +65,20 @@ function checkMultiplierCount(){
         MultiplierButton.hidden = true;
     }
 }
+AboutButton.onclick = function(){
+    About.style.display = "block";
+}
+
+Exit.onclick = function() {
+    About.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == About) {
+      About.style.display = "none";
+    }
+}
+
 restarting.addEventListener("click", function(){
     location.reload();
 })
