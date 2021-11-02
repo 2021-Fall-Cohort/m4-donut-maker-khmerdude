@@ -7,10 +7,12 @@ const AutoClickCounter = document.getElementById("number-of-bakers")
 const MultiplierCounter = document.getElementById("increase-efficiency")
 const AutoCost = document.getElementById("salary")
 const MultiCost = document.getElementById("price")
-const About = document.getElementById("about")
+const About = document.querySelector(".modal-about")
 const AboutButton = document.getElementById("abtBtn")
-const Exit = document.getElementsByClassName("close")
-
+const Inspiration = document.querySelector(".modal-ins")
+const InspirationButton = document.getElementById("insBtn")
+const Contact = document.querySelector(".modal-contact")
+const ContactButton = document.getElementById("conBtn")
 const restarting = document.getElementById("reset")
 
 
@@ -69,13 +71,23 @@ AboutButton.onclick = function(){
     About.style.display = "block";
 }
 
-Exit.onclick = function() {
-    About.style.display = "none";
+InspirationButton.onclick = function(){
+    Inspiration.style.display = "block";
+}
+
+ContactButton.onclick = function(){
+    Contact.style.display = "block";
 }
 
 window.onclick = function(event) {
     if (event.target == About) {
-      About.style.display = "none";
+        About.style.display = "none";
+    }
+    if (event.target == Inspiration) {
+        Inspiration.style.display = "none";
+    }
+    if (event.target == Contact) {
+        Contact.style.display = "none";
     }
 }
 
