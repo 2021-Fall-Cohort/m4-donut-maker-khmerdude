@@ -1,6 +1,6 @@
 class DonutShop {
     constructor(){
-        this.donutCount = 0;
+        this.donutCount = 100;
         this.autoClickerCount = 0;
         this.multiplierCount = 0;
         this.autoClickerCost = 100;

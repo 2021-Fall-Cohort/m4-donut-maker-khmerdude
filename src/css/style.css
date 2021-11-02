@@ -31,12 +31,47 @@ header {
 body {
     background-color: aqua;
 }
-
+#reset {
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+#multiplier {
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+#auto {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+#create > img {
+  max-width: 50px;
+   }
 #reset > img {
 max-width: 20px;
-border-radius: 50%;
+border-radius: 100px;
 background: none;
 }
+#multiplier > img {
+  max-width: 50px;
+  border-radius: 100%;
+  background: none;
+  }
+#auto > img {
+   max-width: 50px;
+    }
+    
 
 .modal-about {
     display: none; /* Hidden by default */
